@@ -1,150 +1,17 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/Scripts/Main.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Scenes/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/Scenes/ScoreNode.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Scenes/ScoreNode.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Scenes/Player.tscn" type="PackedScene" id=3]
 
 [node name="Main" type="Node" index="0"]
 
 script = ExtResource( 1 )
 map_size = Vector2( 100, 100 )
+ScoreNode = ExtResource( 2 )
 
-[node name="Player" parent="." index="0" instance=ExtResource( 2 )]
+[node name="Player" parent="." index="0" instance=ExtResource( 3 )]
 
 [node name="PointContainer" type="Node2D" parent="." index="1"]
-
-editor/display_folded = true
-
-[node name="ScoreNode" parent="PointContainer" index="0" instance=ExtResource( 3 )]
-
-position = Vector2( 418.779, 125.904 )
-
-[node name="ScoreNode2" parent="PointContainer" index="1" instance=ExtResource( 3 )]
-
-position = Vector2( 411.449, -31.2958 )
-
-[node name="ScoreNode3" parent="PointContainer" index="2" instance=ExtResource( 3 )]
-
-position = Vector2( 268.91, 130.791 )
-
-[node name="ScoreNode4" parent="PointContainer" index="3" instance=ExtResource( 3 )]
-
-position = Vector2( 646.026, 231.79 )
-
-[node name="ScoreNode5" parent="PointContainer" index="4" instance=ExtResource( 3 )]
-
-position = Vector2( 480.682, 297.765 )
-
-[node name="ScoreNode6" parent="PointContainer" index="5" instance=ExtResource( 3 )]
-
-position = Vector2( 367.682, 454.765 )
-
-[node name="ScoreNode7" parent="PointContainer" index="6" instance=ExtResource( 3 )]
-
-position = Vector2( 187.682, 361.765 )
-
-[node name="ScoreNode8" parent="PointContainer" index="7" instance=ExtResource( 3 )]
-
-position = Vector2( 336.682, 323.765 )
-
-[node name="ScoreNode9" parent="PointContainer" index="8" instance=ExtResource( 3 )]
-
-position = Vector2( 500.682, 422.765 )
-
-[node name="ScoreNode10" parent="PointContainer" index="9" instance=ExtResource( 3 )]
-
-position = Vector2( 579.682, 342.765 )
-
-[node name="ScoreNode11" parent="PointContainer" index="10" instance=ExtResource( 3 )]
-
-position = Vector2( 570.682, 143.765 )
-
-[node name="ScoreNode12" parent="PointContainer" index="11" instance=ExtResource( 3 )]
-
-position = Vector2( 611.682, 8.76471 )
-
-[node name="ScoreNode13" parent="PointContainer" index="12" instance=ExtResource( 3 )]
-
-position = Vector2( 351.682, 28.7647 )
-
-[node name="ScoreNode14" parent="PointContainer" index="13" instance=ExtResource( 3 )]
-
-position = Vector2( 95.6815, 151.765 )
-
-[node name="ScoreNode15" parent="PointContainer" index="14" instance=ExtResource( 3 )]
-
-position = Vector2( 70.6815, 307.765 )
-
-[node name="ScoreNode16" parent="PointContainer" index="15" instance=ExtResource( 3 )]
-
-position = Vector2( 32.6815, 428.765 )
-
-[node name="ScoreNode17" parent="PointContainer" index="16" instance=ExtResource( 3 )]
-
-position = Vector2( 176.682, 469.765 )
-
-[node name="ScoreNode18" parent="PointContainer" index="17" instance=ExtResource( 3 )]
-
-position = Vector2( 304.557, 679.262 )
-
-[node name="ScoreNode19" parent="PointContainer" index="18" instance=ExtResource( 3 )]
-
-position = Vector2( 299.115, 560.91 )
-
-[node name="ScoreNode20" parent="PointContainer" index="19" instance=ExtResource( 3 )]
-
-position = Vector2( 439.234, 552.748 )
-
-[node name="ScoreNode21" parent="PointContainer" index="20" instance=ExtResource( 3 )]
-
-position = Vector2( 435.152, 654.776 )
-
-[node name="ScoreNode22" parent="PointContainer" index="21" instance=ExtResource( 3 )]
-
-position = Vector2( 553.505, 528.261 )
-
-[node name="ScoreNode23" parent="PointContainer" index="22" instance=ExtResource( 3 )]
-
-position = Vector2( 565.748, 627.568 )
-
-[node name="ScoreNode24" parent="PointContainer" index="23" instance=ExtResource( 3 )]
-
-position = Vector2( 633.767, 454.801 )
-
-[node name="ScoreNode25" parent="PointContainer" index="24" instance=ExtResource( 3 )]
-
-position = Vector2( 686.822, 540.504 )
-
-[node name="ScoreNode26" parent="PointContainer" index="25" instance=ExtResource( 3 )]
-
-position = Vector2( 711.308, 359.575 )
-
-[node name="ScoreNode27" parent="PointContainer" index="26" instance=ExtResource( 3 )]
-
-position = Vector2( 788.85, 461.603 )
-
-[node name="ScoreNode28" parent="PointContainer" index="27" instance=ExtResource( 3 )]
-
-position = Vector2( 139.951, 569.072 )
-
-[node name="ScoreNode29" parent="PointContainer" index="28" instance=ExtResource( 3 )]
-
-position = Vector2( 115.465, 709.191 )
-
-[node name="ScoreNode30" parent="PointContainer" index="29" instance=ExtResource( 3 )]
-
-position = Vector2( 80.0951, 517.378 )
-
-[node name="ScoreNode31" parent="PointContainer" index="30" instance=ExtResource( 3 )]
-
-position = Vector2( 5.27448, 722.794 )
-
-[node name="ScoreNode32" parent="PointContainer" index="31" instance=ExtResource( 3 )]
-
-position = Vector2( -16.4915, 579.955 )
-
-[node name="ScoreNode33" parent="PointContainer" index="32" instance=ExtResource( 3 )]
-
-position = Vector2( 210.691, 248.024 )
 
 
