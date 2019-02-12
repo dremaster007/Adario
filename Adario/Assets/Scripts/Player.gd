@@ -14,7 +14,6 @@ func _ready():
 	velocity = Vector2(0,0)
 
 func _process(delta):
-	change_size()
 	camera_size_change()
 	get_input()
 	position += velocity * delta * speed
@@ -44,4 +43,7 @@ func get_input():
 func _on_Player_area_entered(area):
 	if area.is_in_group("point"):
 		score += 1
+		change_size()
 		area.queue_free()
+	#if area.is_in_group("spawn"):
+		#area.queue_free()
